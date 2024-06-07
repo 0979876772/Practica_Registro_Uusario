@@ -26,169 +26,75 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
                 android:foregroundTint="#A30101"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/txtNombre"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/user" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtNombre"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:hint="Nombre"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imgUusario"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="hint"
-                    tools:ignore="TouchTargetSizeCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtApellido"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="15dp"
-                android:hint="Apellido"
-                app:layout_constraintEnd_toEndOf="@+id/txtNombre"
-                app:layout_constraintStart_toStartOf="@+id/txtNombre"
-                app:layout_constraintTop_toBottomOf="@+id/txtNombre">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="hint"
-                    tools:ignore="TouchTargetSizeCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
 
             <ImageView
                 android:id="@+id/ImgEmpresa"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:layout_marginStart="16dp"
                 app:layout_constraintEnd_toStartOf="@+id/txtEmpresa"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/txtEmpresa"
                 app:srcCompat="@drawable/empresa" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtEmpresa"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="15dp"
-                android:hint="Empresa"
-                app:layout_constraintEnd_toEndOf="@+id/txtApellido"
-                app:layout_constraintStart_toStartOf="@+id/txtApellido"
-                app:layout_constraintTop_toBottomOf="@+id/txtApellido">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="hint"
-                    tools:ignore="TouchTargetSizeCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
 
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 app:layout_constraintEnd_toStartOf="@+id/txtTelefono"
+                app:layout_constraintHorizontal_bias="0.444"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/txtTelefono"
                 app:srcCompat="@drawable/phone" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtTelefono"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="15dp"
-                android:hint="Telefono"
-                app:layout_constraintEnd_toEndOf="@+id/txtEmpresa"
-                app:layout_constraintStart_toStartOf="@+id/txtEmpresa"
-                app:layout_constraintTop_toBottomOf="@+id/txtEmpresa">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="hint"
-                    tools:ignore="TouchTargetSizeCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                app:layout_constraintEnd_toStartOf="@+id/txtEmail"
+                android:layout_marginStart="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/txtCorreo"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/email"
-                tools:layout_editor_absoluteY="240dp" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtEmail"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="15dp"
-                android:hint="Correo"
-                app:layout_constraintEnd_toEndOf="@+id/txtTelefono"
-                app:layout_constraintStart_toStartOf="@+id/txtTelefono"
-                app:layout_constraintTop_toBottomOf="@+id/txtTelefono">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="hint" />
-            </com.google.android.material.textfield.TextInputLayout>
+                app:layout_constraintTop_toTopOf="@+id/txtCorreo"
+                app:srcCompat="@drawable/email" />
 
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/txtFechNac"
+                app:layout_constraintEnd_toStartOf="@+id/txtFecha"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/txtFechNac"
+                app:layout_constraintTop_toTopOf="@+id/txtFecha"
+                app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/calendary" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txtFechNac"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="15dp"
-                android:hint="Fecha Nacimiento"
-                app:layout_constraintEnd_toStartOf="@+id/btnFecha"
-                app:layout_constraintStart_toStartOf="@+id/txtEmail"
-                app:layout_constraintTop_toBottomOf="@+id/txtEmail">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="hint" />
-            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButtonToggleGroup
                 android:id="@+id/toggleButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                app:layout_constraintStart_toStartOf="@+id/txtFechNac"
-                app:layout_constraintTop_toBottomOf="@+id/txtFechNac">
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtFecha">
 
                 <Button
-                    android:id="@+id/button1"
+                    android:id="@+id/btnHombre"
                     style="?attr/materialButtonOutlinedStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Hombre" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/btnMujer"
                     style="?attr/materialButtonOutlinedStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -197,12 +103,94 @@
 
             <Button
                 android:id="@+id/btnFecha"
-                android:layout_width="92dp"
-                android:layout_height="39dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="#433E3E"
                 android:text="Fecha"
-                app:layout_constraintEnd_toEndOf="@+id/txtEmail"
-                app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCorreo"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgUusario"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtApellido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="Apellido"
+                android:inputType="text"
+                android:minHeight="48dp"
+                app:layout_constraintEnd_toEndOf="@+id/txtNombre"
+                app:layout_constraintStart_toStartOf="@+id/txtNombre"
+                app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+            <EditText
+                android:id="@+id/txtEmpresa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="Empresa"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/txtApellido"
+                app:layout_constraintStart_toStartOf="@+id/txtApellido"
+                app:layout_constraintTop_toBottomOf="@+id/txtApellido" />
+
+            <EditText
+                android:id="@+id/txtTelefono"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="Teléfono"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="@+id/txtEmpresa"
+                app:layout_constraintStart_toStartOf="@+id/txtEmpresa"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmpresa"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/txtCorreo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                app:layout_constraintEnd_toEndOf="@+id/txtTelefono"
+                app:layout_constraintStart_toStartOf="@+id/txtTelefono"
+                app:layout_constraintTop_toBottomOf="@+id/txtTelefono" />
+
+            <EditText
+                android:id="@+id/txtFecha"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="Fecha Nacimiento"
+                android:inputType="date"
+                app:layout_constraintBottom_toTopOf="@+id/toggleButton"
+                app:layout_constraintEnd_toStartOf="@+id/btnFecha"
+                app:layout_constraintStart_toStartOf="@+id/txtCorreo"
+                app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
@@ -214,7 +202,7 @@
         android:layout_marginTop="16dp"
         android:text="REGISTRO DE USUARIO"
         android:textAlignment="center"
-        android:textColor="#0C2EED"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -225,23 +213,15 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:text="Agregar Foto"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Button"
-        app:icon="@drawable/xamera"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -261,6 +241,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
+            android:backgroundTint="#433E3E"
             android:text="Limpiar" />
 
         <Button
@@ -270,8 +251,25 @@
             android:layout_margin="10dp"
             android:layout_marginBottom="16dp"
             android:layout_weight="1"
-            android:text="Grabar"
+            android:backgroundTint="#433E3E"
+            android:onClick="btnEnviar"
+            android:text="Guardar"
             app:layout_constraintBottom_toBottomOf="parent" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="81dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="#433E3E"
+        app:icon="@drawable/camera"
+        app:iconGravity="textTop"
+        app:iconSize="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
